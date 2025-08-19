@@ -26,15 +26,16 @@
       color: #333;
       margin-bottom: 10px;
     }
-    .cupcake-section {
+    .cupcake-section, .tart-section {
       display: flex;
       align-items: flex-start;
       gap: 20px;
       margin-bottom: 40px;
     }
-    .cupcake-section img {
-      max-width: 300px;
-      height: auto;
+    .cupcake-section img, .tart-section img {
+      width: 384px;
+      height: 384px;
+      object-fit: cover;
       border-radius: 8px;
       box-shadow: 0 0 5px rgba(0,0,0,0.2);
     }
@@ -87,8 +88,8 @@
 
     <h1>・次作りたいお菓子</h1>
     <p>ブルーベリータルト</p>
-    <img src="https://www.photolibrary.jp/mhd1/img473/450-2016062610343732646.jpg" alt="ブルーベリータルト">
-     <div class="tart-section">
+    <div class="tart-section">
+      <img src="https://www.photolibrary.jp/mhd1/img473/450-2016062610343732646.jpg" alt="ブルーベリータルト">
       <div class="recipe">
         <h2>ブルーベリータルトの作り方</h2>
         <ul>
@@ -103,7 +104,6 @@
   </main>
   <footer>
     <div>連絡先: example@example.com</div>
-    
     <div>
       <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> |
       <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> |
@@ -112,6 +112,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
