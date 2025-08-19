@@ -27,9 +27,29 @@
       flex: 1;
       padding: 20px;
     }
-    main h2 {
+    main h1 {
       color: #333;
       margin-bottom: 10px;
+    }
+
+    /* 画像と作り方を横並びに */
+    .cupcake-section {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .cupcake-section img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+    .recipe {
+      max-width: 500px;
+    }
+    .recipe ul {
+      padding-left: 20px;
     }
     footer {
       background-color: #66FFCC;
@@ -56,14 +76,27 @@
     私のお菓子作り
   </header>
   <main>
-    <h1>最近作ったお菓子</h1>
-    <p>カップケーキ</p>
-    <img src="https://github.com/itimaru8/test1/blob/main/cupcake.jpg?raw=true" alt="サンプル">
-    <h1>次作りたいお菓子</h1>
+    <h1>・最近作ったお菓子</h1>
+    <div class="cupcake-section">
+      <img src="https://github.com/itimaru8/test1/blob/main/cupcake.jpg?raw=true" alt="カップケーキ">
+      <div class="recipe">
+        <h2>カップケーキの作り方</h2>
+        <ul>
+          <li>オーブンを180度に予熱する</li>
+          <li>ボウルに小麦粉、砂糖、ベーキングパウダーを混ぜる</li>
+          <li>卵、牛乳、溶かしバターを加えてよく混ぜる</li>
+          <li>カップに生地を入れ、約20分焼く</li>
+          <li>焼きあがったら冷ましてから飾り付ける</li>
+        </ul>
+      </div>
+    </div>
+
+    <h1>・次作りたいお菓子</h1>
     <p>チョコレート</p>
   </main>
   <footer>
     <div>連絡先: example@example.com</div>
+    
     <div>
       <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> |
       <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> |
@@ -72,5 +105,4 @@
   </footer>
 </body>
 </html>
-
 
